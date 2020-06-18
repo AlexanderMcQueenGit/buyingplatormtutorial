@@ -7,8 +7,8 @@ class Video extends Component {
 
     render() {
         return (
-            <div>
-                <ReactPlayer url={this.props.tutorialData.url} controls="true" widht="" />
+            <div className="video-container">
+                <ReactPlayer url={this.props.tutorialData.url} controls="true" width="80%" height="80%" />
             </div>
         );
     }

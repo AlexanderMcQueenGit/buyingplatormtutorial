@@ -137,7 +137,7 @@ class App extends Component {
               <Route path="/tutorial-page">
                 <div className="scopecontainer">
                   <div className="scopetitle bottommargin">
-                    {tutorialData === undefined ? "" : tutorialData.name}
+                    {tutorialData === undefined ? "" : tutorialData.step + " : " + tutorialData.name}
                   </div>
 
                   <div className="inputcontainer">

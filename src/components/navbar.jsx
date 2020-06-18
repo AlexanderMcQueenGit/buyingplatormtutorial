@@ -23,7 +23,7 @@ class NavbarAMQ extends Component {
     return (
       <Navbar className="amqnav" fixed="top">
         <Navbar.Brand>
-          {this.props.location.pathname === "/inputs" ? (
+          {this.props.location.pathname === "/tutorial-page" ? (
             <Link to="/" className="inputcontainer">
               <img
                 src="https://icarr-cdn.s3-eu-west-1.amazonaws.com/images/input-tables/AMQ-LOGO-2.png"
@@ -34,20 +34,20 @@ class NavbarAMQ extends Component {
               />
             </Link>
           ) : (
-            <a
-              onClick={this.redirectAMQ}
-              className="inputcontainer"
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src="https://icarr-cdn.s3-eu-west-1.amazonaws.com/images/input-tables/AMQ-LOGO-2.png"
-                // width="30"
-                // height="30"
-                className="d-inline-block align-top amqlogo"
-                alt="React Bootstrap logo"
-              />
-            </a>
-          )}
+              <a
+                onClick={this.redirectAMQ}
+                className="inputcontainer"
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src="https://icarr-cdn.s3-eu-west-1.amazonaws.com/images/input-tables/AMQ-LOGO-2.png"
+                  // width="30"
+                  // height="30"
+                  className="d-inline-block align-top amqlogo"
+                  alt="React Bootstrap logo"
+                />
+              </a>
+            )}
         </Navbar.Brand>
         <Navbar.Text className="justify-content-end username" id="authusername">
           Hi
