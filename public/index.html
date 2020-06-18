@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <script>
+    console.info("wahhhhhhh");
+    console.info("UPDATE ___________login page");
+    console.info(localStorage, "localStorage");
+    console.info(sessionStorage, "sessionStorage");
+    console.log(localStorage.getItem("redirect"));
+    if (localStorage.getItem("redirect") != "true") {
+      var url = document.location.href;
+      console.info("url", url);
+      if (
+        url.split("username=")[1] !== null &&
+        url.split("username=")[1] !== undefined
+      ) {
+        console.info("enter else if");
+        localStorage.setItem(
+          "username",
+          url.split("username=")[1].split("&")[1].split("\\")[1]
+        );
+        localStorage.setItem(
+          "name",
+          url.split("username=")[1].split("&")[1].split("\\")[1].split(".")[0]
+        );
+        localStorage.setItem("redirect", "true");
+        sessionStorage.setItem(
+          "username",
+          url.split("username=")[1].split("&")[1].split("\\")[1]
+        );
+        sessionStorage.setItem(
+          "name",
+          url.split("username=")[1].split("&")[1].split("\\")[1].split(".")[0]
+        );
+        sessionStorage.setItem("redirect", "true");
+        window.top.location = "https://www.alexandermcqueen.io/models/skucap";
+      } else {
+        console.info("enter else else");
+        var origin_var = "skucap";
+        sessionStorage.setItem("redirect", "false");
+        sessionStorage.setItem("nameApp", origin_var);
+        document.cookie = "nameApp";
+        localStorage.setItem("redirect", "false");
+        window.top.location =
+          "https://www.alexandermcqueen.io/extensions/ModelS_Loading_input/ModelS_Loading_input.html?nameApp=skucap";
+      }
+    }
+  </script> -->
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+<script>
+  localStorage.setItem("model_part", "ModelS");
+</script>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+<script>
+  localStorage.setItem("model_part", "ModelR");
+  console.info("Hi ", localStorage.getItem("name"));
+  console.info("_____________");
+  console.info(localStorage.getItem("fullname"));
+  console.info("_____________");
+  console.info(sessionStorage.getItem("fullname"));
+  const capitalize = (s) => {
+    if (typeof s !== "string") return "";
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
+  if (capitalize(sessionStorage.getItem("name")).length > 0) {
+    document.getElementById("authusername").innerHTML =
+      "Hi " + capitalize(sessionStorage.getItem("name"));
+    document.getElementById("authusernamenondesktop").innerHTML =
+      "Hi " + capitalize(sessionStorage.getItem("name"));
+  } else {
+    document.getElementById("authusername").innerHTML =
+      "Hi " + capitalize(localStorage.getItem("name"));
+    document.getElementById("authusernamenondesktop").innerHTML =
+      "Hi " + capitalize(localStorage.getItem("name"));
+  }
+</script>
+
+</html>

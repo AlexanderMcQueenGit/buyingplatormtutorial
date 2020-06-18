@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url(https://icarr-cdn.s3-eu-west-1.amazonaws.com/fonts/SF-Pro-Text-Regular.otf);
+}
+
+.App {
+  text-align: center;
+  font-family: "SF Pro" !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*********** navbar *************/
+
+.amqlogo {
+  height: 20px;
+  width: auto;
+  filter: invert(1);
+}
+
+.amqnav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.username {
+  color: white !important;
+  margin-left: auto;
+}
+
+.scopetitle {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bottommargin {
+  margin-bottom: 80px;
+}
+
+.bottommargintwenty {
+  margin-bottom: 20px;
+}
+
+.paddingtwenty {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/******* Scope Classes ********/
+
+.scopecontainer {
+  padding-top: 124px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+}
+
+.scopeitem {
+  text-align: left;
+  font-size: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.scopeitemchoosen {
+  font-size: 12px;
+  text-align: left;
+}
+
+.scopesubtitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/******* Button ************/
+
+.ctabutton {
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 12px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/********** Table ************/
+
+.table {
+  font-size: 12px;
+}
+
+.inputcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.table-striped tbody tr {
+  background-color: none !important;
+  border: none;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: none;
+}
+
+.table thead th {
+  border: none !important;
+}
+
+.table td,
+.table th {
+  border-top: none;
+}
+
+.inputdimension {
+  text-align: left !important;
+}
+
+.inputdimension_container {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.table td,
+.table th {
+  text-align: right;
+}
+
+/************ Input *****************/
+
+.userinput {
+  background-color: #f2f2f2;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-indent: 5px;
+  text-align: right;
+  padding-right: 10px;
+  width: 100px;
+}
+
+/******* Button Group *********/
+
+.floatright {
+  float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+/************* Store Scope ********/
+
+.countryflag {
+  transform: scale(1.27);
+  height: 30px;
+  width: 30px;
+  /* /* margin-right: 10px;
+  margin-left: -1px; */
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.flagcontainer {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 1px black solid;
+  /* display: inline-block !important; */
+  /* margin-bottom: 10px;
+  margin-top: 10px; */
+  /* margin-right: 10px; */
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.storescopecontainer {
+  display: flex !important;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.storescopecontainer_choosen {
+  display: flex !important;
+  align-items: center;
+  /* padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px; */
+}
+
+.storescopecontainer:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.selected {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+.padding-right--10 {
+  padding-right: 10px;
+}
+
+.padding-left-7 {
+  padding-left: 7px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-padding-left-right {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.newstore {
+  color: #e1262c;
+  padding-left: 10px;
+}
+
+.choosenstorerow {
+  width: 100%;
+}
+
+.choosenstore_row {
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.errorborder {
+  border: 1px solid red;
+}
+
+.errorcolor {
+  color: red;
+}
+
+.test {
+}
