@@ -341,3 +341,19 @@ video:focus {
 .width-100 {
   width: 100%;
 }
+
+.video-react .video-react-big-play-button {
+  top: 220px !important;
+  left: 360px !important;
+  }
+
+  .video-react {
+    background-color:white !important
+  }
+ 
+  
+  
+  
+  
+  
+ 

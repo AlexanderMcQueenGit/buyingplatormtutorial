@@ -19,10 +19,13 @@ class Video extends Component {
             //         <source src={this.props.tutorialData.url} type="video/mp4" style={{ zIndex: "1" }} />
             //     </video>
             // </div>
-            <Player
-                playsInline
-                src={this.props.tutorialData.url}
-            />
+            <div style={{ width: "800px", height: "415px" }}>
+                <Player
+                    style={{ width: "100%", height: "100%" }}
+                    playsInline
+                    src={this.props.tutorialData.url}
+                />
+            </div>
         );
     }
 }
