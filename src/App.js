@@ -142,7 +142,7 @@ class App extends Component {
                   </div>
 
                   <div className="inputcontainer">
-                    <div className="flexwrapper">
+                    <div className="flexwrapper width-100">
                       <Tutorial tutorialData={tutorialData}
                       />
                     </div>
