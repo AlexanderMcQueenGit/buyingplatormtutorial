@@ -333,3 +333,7 @@ a:hover {
   align-content: center;
   justify-content: center;
 }
+
+video:focus {
+  outline: none;
+}
