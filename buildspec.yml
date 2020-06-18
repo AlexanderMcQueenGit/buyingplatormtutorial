@@ -12,4 +12,4 @@ phases:
   post_build:
     commands:
       - aws s3 sync --acl public-read --delete ./build/ s3://amq-qliksense-production-site20200211115206589700000002/models-buyingtutorial/
-      - aws cloudfront create-invalidation --distribution-id E321TQJUCL9H7J --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E2094VGJL2AH34 --paths "/*"
