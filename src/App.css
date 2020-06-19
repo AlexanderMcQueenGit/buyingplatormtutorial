@@ -348,7 +348,8 @@ video:focus {
   }
 
   .video-react {
-    background-color:white !important
+    background-color:white !important;
+    font-family: "SF Pro" !important;
   }
  
   
